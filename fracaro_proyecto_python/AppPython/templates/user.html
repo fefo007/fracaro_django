@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+    {% block customSection %}
+    <section>
+        <div style="display: flex;justify-content: center;">
+            <form style="display: flex;flex-direction: column;" action="{%url 'user' %}" method="POST">{% csrf_token %}
+                <input type='text' name='name' placeholder=' nombre' >
+                <input type='text' name='lastname' placeholder=' apellido' >
+                <input type='email' name='email' placeholder=' email' >
+                <input type='number' name='birthday' placeholder=' fecha de nacimiento' >
+                <input type='number' name='phone' placeholder=' cel' >
+                <input type='text' name='address' placeholder=' direccion' >
+                <input type='submit'value='Enviar'>        
+            </form>
+        </div>
+        <div>
+
+        </div>
+    </section>
+    {% endblock customSection %}

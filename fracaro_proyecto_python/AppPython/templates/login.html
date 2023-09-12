@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagine and Travel</title>
+    <style>body{padding-top: 60px;}</style>
+
+    <link href='{%static "assets/css/bootstrap.css"%}' rel="stylesheet" />
+	<link href='{%static "assets/css/login-register.css"%}' rel="stylesheet" />
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+	<script src='{%static "assets/js/jquery-1.10.2.js"%}' type="text/javascript"></script>
+	<script src='{%static "assets/js/bootstrap.js"%}' type="text/javascript"></script>
+	<script src='{%static "assets/js/login-register.js"%}' type="text/javascript"></script>
+
+</head>
+<body>
+    <h1>El login </h1>
+    {% include 'login_template.html' %}
+    <button>
+        <a href="/imagine-and-travel/home">Hacia home</a>
+    </button>
+</body>
+</html>

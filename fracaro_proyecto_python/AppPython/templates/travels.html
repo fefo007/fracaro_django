@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+    {% block customSection %}
+    <section>
+        <div>
+            <form action="{%url 'travels' %}" method="POST">{% csrf_token %}
+                {{travels_form.as_p}}
+                <input type='submit'value='Enviar'>        
+            </form>
+        </div>
+        <div>
+            
+        </div>
+    </section>
+    {% endblock customSection %}
